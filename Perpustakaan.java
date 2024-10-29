@@ -34,7 +34,7 @@ public class Perpustakaan {
         this.alamat = alamat;
     }
 
-    // Method untuk mengelola buku dan anggota
+    // Method untuk mengelola buku, anggota dan transaksi
     public void tambahBuku(Buku buku) {
         daftarBuku.add(buku);
         System.out.println("Buku " + buku.getJudul() + " berhasil ditambahkan");
@@ -49,6 +49,7 @@ public class Perpustakaan {
         daftarTransaksi.add(transaksi);
     }
 
+    // Method untuk menampilkan daftar buku, anggota dan transaksi
     public void daftarBuku() {
         System.out.println("Daftar Buku:");
         for (Buku buku : daftarBuku) {
@@ -69,6 +70,8 @@ public class Perpustakaan {
             System.out.println("ID Transaksi: " + transaksi.getIdTransaksi());
         }
     }
+
+    // Method untuk mencari buku, anggota dan transaksi
     public Buku cariBuku(String isbn) {
         for (Buku buku : daftarBuku) {
             if (buku.getIsbn().equals(isbn)) {
