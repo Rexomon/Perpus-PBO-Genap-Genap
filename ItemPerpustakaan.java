@@ -1,4 +1,5 @@
 // Kelas induk untuk Item Perpustakaan
+// Abstract sehingga tidak bisa diinstansiasi langsung, maka harus diimplementasi oleh kelas anak
 abstract class ItemPerpustakaan {
     protected String id;
     protected String judul;

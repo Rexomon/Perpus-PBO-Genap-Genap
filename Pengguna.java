@@ -1,4 +1,5 @@
 // Kelas induk untuk Pengguna
+// Abstract sehingga tidak bisa diinstansiasi langsung, maka harus diimplementasi oleh kelas anak
 abstract class Pengguna {
     protected String id;
     protected String nama;
@@ -12,5 +13,7 @@ abstract class Pengguna {
         this.noTelp = noTelp;
     }
 
-    public abstract String getStatus();
+    public String getStatus() {
+        return "Status tidak diketahui";
+    }
 }

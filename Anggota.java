@@ -14,6 +14,7 @@ class Anggota extends Pengguna {
         this.statusAktif = true;
     }
 
+    //Merupakan method override dari kelas induk
     @Override
     public String getStatus() {
         return statusAktif ? "Aktif" : "Tidak Aktif";
