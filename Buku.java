@@ -6,8 +6,8 @@ class Buku extends ItemPerpustakaan {
     private boolean tersedia;
 
     // Constructor Overloading
-    public Buku(String id, String judul, String penerbit, int tahunTerbit, String isbn, String penulis) {
-        super(id, judul, penerbit, tahunTerbit);
+    public Buku(String idBuku, String judul, String penerbit, int tahunTerbit, String isbn, String penulis) {
+        super(idBuku, judul, penerbit, tahunTerbit);
         this.isbn = isbn;
         this.penulis = penulis;
         this.stok = 1;
@@ -47,7 +47,7 @@ class Buku extends ItemPerpustakaan {
     }
 
     public void setID(String id) {
-        this.id = id;
+        this.idBuku = id;
     }
 
     public void setPenerbit(String penerbit) {

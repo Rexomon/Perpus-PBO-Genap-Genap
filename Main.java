@@ -9,7 +9,7 @@ public class Main {
         try {
             // Inisialisasi perpustakaan/Instance
             Scanner input = new Scanner(System.in);
-            Perpustakaan perpus = new Perpustakaan("Perpustakaan Digital", "Jl. Contoh No. 123");
+            Perpustakaan perpus = new Perpustakaan("Perpustakaan", "Jl. Bantul No. 45");
             System.out.println("Selamat datang di " + perpus.getNama());
             System.out.println("Alamat: " + perpus.getAlamat());
 
@@ -33,7 +33,7 @@ public class Main {
                 if(pilihan == 1){
                     // Tambah buku
                     // Polimorfisme pada kelas Buku
-                    Buku buku1 = new Buku("B001", "Java Programming", "Penerbit A", 2023, "ISBN-001", "John Doe", 3);
+                    Buku buku1 = new Buku("B001", "Program Java", "A", 2023, "ISBN-001", "John Cena", 3);
 
                     System.out.print("Masukkan judul buku: ");
                     buku1.setJudul(input.nextLine()); // Polimorfisme: Memanggil metode setJudul pada objek buku1 yang merupakan instance dari kelas Buku
@@ -63,7 +63,7 @@ public class Main {
                 if(pilihan == 2){
                     //  Tambah anggota
                     //  Polimorfisme pada kelas Anggota
-                    Anggota anggota1 = new Anggota("A001", "Jane Smith", "Jl. Pembaca No. 45", "08123456789", "MEMBER-001");
+                    Anggota anggota1 = new Anggota("A001", "Agus", "Jl. Sleman", "08123456789");
 
                     System.out.print("Masukkan nama anggota: ");
                     anggota1.setNama(input.nextLine()); // Polimorfisme: Memanggil metode setNama pada objek anggota1 yang merupakan instance dari kelas Anggota

@@ -3,13 +3,11 @@
 import java.util.Date;
 
 class Anggota extends Pengguna {
-    private String idAnggota;
     private Date tanggalBergabung;
     private boolean statusAktif;
 
-    public Anggota(String id, String nama, String alamat, String noTelp, String idAnggota) {
-        super(id, nama, alamat, noTelp);
-        this.idAnggota = idAnggota;
+    public Anggota(String idAnggota, String nama, String alamat, String noTelp) {
+        super(idAnggota, nama, alamat, noTelp);
         this.tanggalBergabung = new Date();
         this.statusAktif = true;
     }
